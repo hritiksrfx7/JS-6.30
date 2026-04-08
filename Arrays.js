@@ -127,17 +127,27 @@ function merge(){
 }
 
 
-let count =0;
+ let count =0;
+ let show = document.querySelector('#number')
 
-let  increment = ()=>{
-    let show = document.querySelector('#number')
+
+ let  increment = ()=>{
+   
     show.innerHTML = ++count
-}
-let  Decrement = ()=>{
-    let show = document.querySelector('#number')
+ }
+ let  Decrement = ()=>{
+    
     if(count == 0){
         return;
     }else{
         show.innerHTML = --count
     }
 }
+
+
+const reset = ()=>{
+    show.innerHTML = 0;
+}
+
+
+
